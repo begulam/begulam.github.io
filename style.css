@@ -1,0 +1,90 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("backgrounds.jpg");
+    background-size: cover;
+    
+}
+
+#box {
+    display: grid;
+    width: 75%;
+    height: 200%;
+    margin: 6px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    background: rgb(212, 225, 229);
+    grid-template-rows: 15% 80% 5%;
+    grid-template-areas: 
+    "h"
+    "m"
+    "f";
+}
+
+header {
+    grid-area: h;
+    background: red;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: 
+    "se"
+    "t";
+}
+
+#search {
+    grid-area: se;
+}
+
+#tools {
+    grid-area: t;
+    background: black;
+}
+
+main {
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 34% 33%;
+    grid-template-areas: 
+    "s"
+    "l"
+    "u";
+}
+
+#slider {
+    display: grid;
+    grid-area: s;
+    background-image: url("slider.jpg");
+    background-size: cover;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    "l v r";
+}
+
+#slide.l {
+    grid-area: l;
+    background-image: url("slide-prev.png");
+}
+
+#slide.r {
+    grid-area: r;
+    background-image: url("slide-next.png");
+}
+
+#langs {
+    grid-area: l;
+}
+
+#user {
+    grid-area: u;
+    background: grey;
+}
+
+footer {
+    grid-area: f;
+    background-image: url("footer.png");
+    background-size: cover;
+}
